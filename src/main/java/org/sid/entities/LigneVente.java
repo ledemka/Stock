@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="ligne-vente")
+@Table(name="ligne_vente")
 public class LigneVente implements Serializable{
 
 	@Id
@@ -23,14 +23,14 @@ public class LigneVente implements Serializable{
 	
 	@ManyToOne
 	@JoinColumn(name = "idVente")
-	private Vente vente;
+	private Vente vente1;
 
 	public Vente getVente() {
-		return vente;
+		return vente1;
 	}
 
 	public void setVente(Vente vente) {
-		this.vente = vente;
+		this.vente1 = vente;
 	}
 
 	public Long getIdLigneVente() {

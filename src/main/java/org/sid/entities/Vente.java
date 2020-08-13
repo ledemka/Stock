@@ -24,7 +24,7 @@ public class Vente implements Serializable{
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dateVente;
 	
-	@OneToMany(mappedBy="vente")
+	@OneToMany(mappedBy="vente1")
 	List<LigneVente> ligneVentes;
 
 	public Long getIdVente() {

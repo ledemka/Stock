@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="lignecommandeclient")
+@Table(name="ligne_commande_client")
 public class LigneCommandeClient implements Serializable{
 
 	@Id
